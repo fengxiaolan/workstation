@@ -1,0 +1,52 @@
+/*主体内容*/
+.content-mask {
+    position: absolute;
+    top: 106px;
+    right: 0;
+    bottom: 0;
+    left: 257px;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    z-index: 1;
+    min-width: 444px;
+}
+.content{
+    /*background-color: #f1f1f1;*/
+    /*overflow: hidden;*/
+    /*z-index: 1;*/
+    /*min-width: 444px;*/
+    position: absolute;
+    top: 112px;
+    right: 0;
+    bottom: 0;
+    left: 256px;
+    background-color: #ffffff;
+    margin: 16px;
+    overflow: hidden;
+    z-index: 2;
+}
+.content-mask {
+    background-color: silver;
+    opacity: 0.7;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    z-index: 999;
+}
+.content .tab-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    /*margin: 16px;*/
+    /*overflow: hidden;*/
+}
+.tab-iframe {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.iframe-show {
+    display: block;
+}

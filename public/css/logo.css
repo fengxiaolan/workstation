@@ -1,0 +1,30 @@
+/*左侧logo*/
+.logo-nav{
+    width: 100%;
+    /*min-width: 256px;*/
+    height: 61px;
+    /*background-color: #001529;*/
+}
+.logo-icon {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin: 9px 0 0 20px;
+    line-height: 44px;
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+    background: #fff;
+}
+.logo-title {
+    position: absolute;
+    left: 80px;
+    top: 10px;
+    /*width: 200px;*/
+    color: #fff;
+    letter-spacing: 1px;
+}
+.logo-title span {
+    display: block;
+}

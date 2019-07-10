@@ -1,0 +1,218 @@
+/*工作台*/
+.tab-ul {
+    width: 100%;
+    height: 48px;
+    font-size: 0;
+}
+.work-table {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 14px;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.to-work-table{
+    color: #1890FF;
+}
+.tab-list-setting {
+    font-size: 18px;
+    color: #c9cace;
+    vertical-align: middle;
+    padding: 0 8px;
+    cursor: pointer;
+    display: none;
+}
+.tab-list-setting:hover {
+    color: #2b86e0;
+}
+.tab-title {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 14px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.tab-active:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    background-color: #2b86e0;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -ms-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    transition: all .1s linear;
+}
+.tab-title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 85%;
+    height: 0;
+    background-color: #2b86e0;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -ms-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    transition: all .1s linear;
+}
+.tab-title:hover {
+    background-color: #eaf4fc;
+    -webkit-transform: translateY(-1px);
+    -moz-transform: translateY(-1px);
+    -ms-transform: translateY(-1px);
+    -o-transform: translateY(-1px);
+    transform: translateY(-1px);
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -ms-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    transition: all .1s linear;
+}
+.tab-title:hover:after {
+    height: 2px;
+}
+.tab-title:hover span{
+    color: #1890ff;
+}
+.tab-title:hover .tab-close{
+    color: #ffffff;
+    background-color: #1890ff;
+}
+.tab-title span {
+    padding-right: 5px;
+    vertical-align: middle;
+}
+.tab-title i {
+    font-style: normal;
+}
+.tab-min-width {
+    max-width: 100px;
+    white-space: nowrap;
+
+: hidden;
+    text-overflow:ellipsis;
+}
+.tab-active {
+    color: #1890ff;
+    -webkit-transform: translateY(-1px);
+    -moz-transform: translateY(-1px);
+    -ms-transform: translateY(-1px);
+    -o-transform: translateY(-1px);
+    transform: translateY(-1px);
+}
+.tab-active:after {
+    height: 2px;
+}
+.tab-active .tab-close{
+    color: #ffffff;
+    background-color: #1890ff;
+}
+.tab-active:hover .tab-close{
+    color: #ffffff;
+    background-color: #1890ff;
+}
+.tab-close {
+    display: inline-block;
+    font-size: 12px;
+    width: 12px;
+    height: 12px;
+    line-height: 11px;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 50%;
+    color: transparent;
+}
+.tab-close:hover {
+    color: #ffffff;
+    background-color: #1890ff;
+}
+
+
+/*工作台更多操作*/
+.tab-list {
+    position: absolute;
+    left: 0;
+    max-height: 600px;
+    overflow-y: auto;
+    margin-top: 2px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 2px 5px 0 #ccc;
+    -moz-box-shadow: 1px 2px 5px 0 #ccc;
+    box-shadow: 1px 2px 5px 0 #ccc;
+    font-size: 12px;
+    display: none;
+    padding: 6px;
+}
+.tab-list li {
+    width: 150px;
+    height: 25px;
+    cursor: pointer;
+}
+.tab-list li:hover {
+    background-color: #2c86e0;
+    color: #ffffff;
+}
+.close-all-tab {
+    border-bottom: 1px solid #ddd;
+    background-color: #2c86e0;
+    text-align: center;
+    color: #fff;
+    line-height: 25px;
+}
+.tab-list li.close-all-tab i {
+    display: block;
+    float: left;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 15px;
+    color: #2c86e0;
+    text-align: center;
+}
+.tab-list li:hover.close-all-tab i {
+    color: #ffffff;
+}
+.tab-list li.close-all-tab span {
+    margin-left: 0;
+}
+.tab-list li span {
+    display: block;
+    width: 100px;
+    margin-left: 25px;
+    float: left;
+    line-height: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.tab-list li i {
+    display: block;
+    float: left;
+    width: 20px;
+    line-height: 25px;
+    font-size: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+.menu-active{
+    background: #2b86e0;
+}

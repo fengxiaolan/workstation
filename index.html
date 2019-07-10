@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>首页</title>
+    <link rel="stylesheet" href="plugin/css/font-awesome.min.css">
+    <link rel="stylesheet" href="public/css/reset.css">
+    <link rel="stylesheet" href="public/css/index.css">
+</head>
+<body>
+
+<!--左端导航s-->
+<div class="left-nav none-select">
+    <!--logo-->
+    <div class="logo-nav">
+        <i class="logo-icon"></i>
+        <div class="logo-title">
+            <p style="font-size: 20px;">就业数字化大厅</p>
+            <span style="font-size: 12px;">Digitalization Hall</span>
+        </div>
+    </div>
+    <!--菜单工具-->
+    <div class="menu-tool">
+        <div class="search-input">
+            <i class="search-icon fa fa-search" title="菜单搜索"></i>
+            <input class="input-value"/>
+        </div>
+
+    </div>
+    <!--菜单栏-->
+    <!--<div id="menuul" style="position: relative;left: 0;height: 100%;"></div>-->
+    <ul class="menu-ul">
+    </ul>
+    <div class="menu-drag-bar"></div>
+</div>
+<!--左端导航e-->
+
+<!--菜单标签页s-->
+<div class="menu-tab none-select">
+    <!--一级菜单-->
+    <div class="top-tool">
+        <div class="top-menu">
+            <i class="menu-drawer fa fa-dedent" title="菜单收缩"></i>
+        </div>
+        <div class="panel">
+            <ul class="top-menu-ul">
+                <li><span>一级菜单</span></li>
+            </ul>
+            <div class="top-more">
+                <span class="top-menu-more"><i class="fa fa-th-large"></i> <span style="margin-left: 3px;">更多</span></span>
+                <ul class="top-list scroll-bar">
+                    <li><span>业务逻辑</span></li>
+                </ul>
+            </div>
+        </div>
+        <!--用户自定义菜单-->
+        <div class="toolBar">
+            <i class="login-out fa fa-sign-out" title="退出" onclick="logoutDwr()"></i>
+            <div class="user">
+                <i class="user-icon fa fa-user"></i>
+                <span title="超级管理员">超级管理员</span>
+            </div>
+            <i class="notice  fa fa-envelope-o" title="通知" onclick="fnShowMg()"></i>
+        </div>
+
+    </div>
+    <!--工作台-->
+    <ul class="tab-ul">
+        <li id="tab_workTable" class="work-table tab-active">
+            <span>个人工作台</span>
+        </li>
+        <i>|</i><i class="tab-list-setting fa fa-cog"></i>
+    </ul>
+    <!--工作台更多-->
+    <ul class="tab-list scroll-bar">
+        <li class="close-all-tab">
+            关闭所有
+        </li>
+        <li class="to-work-table">
+            <span>工作台</span>
+        </li>
+    </ul>
+</div>
+<!--菜单标签页e-->
+
+<!--页面内容s-->
+<div class="content">
+    <div class="tab-content">
+        <iframe id="iframe_workTable" frameborder="0" src="worktable/html/personwork.html" scrolling="yes" class="tab-iframe iframe-show"></iframe>
+    </div>
+</div>
+<div class="content-mask" style="display: none;"></div>
+<!--页面内容e-->
+
+</body>
+<script src="public/js/menulist.js" defer async="true"></script>
+<script src="plugin/js/require.js" data-main="main" defer async="true" ></script>
+
+
+
+</html>

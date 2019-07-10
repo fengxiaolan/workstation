@@ -1,0 +1,62 @@
+/*用户自定义菜单项*/
+.toolBar{
+    float: right;
+    width: 260px;
+}
+.notice {
+    display: inline-block;
+    float: right;
+    height: 61px;
+    line-height: 61px;
+    font-size: 22px;
+    color: #444;
+    text-align: center;
+    cursor: pointer;
+}
+.notice:hover {
+    color: #2c86e0;
+}
+.user {
+    display: inline-block;
+    float: right;
+    margin: 0 20px 0 30px;
+    height: 61px;
+    line-height: 61px;
+    font-size: 20px;
+    color: #444;
+    text-align: center;
+    cursor: pointer;
+}
+.user:hover {
+    color: #2c86e0;
+}
+.user-icon {
+    display: table-cell;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+}
+.user span {
+    display: table-cell;
+    max-width: 120px;
+    padding-left: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+    /*overflow: hidden;*/
+    text-overflow: ellipsis;
+}
+.login-out {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+    height: 61px;
+    line-height: 61px;
+    font-size: 22px;
+    color: #444;
+    text-align: center;
+    cursor: pointer;
+}
+.login-out:hover {
+    color: #2c86e0;
+}

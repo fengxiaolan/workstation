@@ -1,0 +1,194 @@
+/*左侧box*/
+.left-nav {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    width: 256px;
+    background-color: #001529;
+    box-shadow: 2px 0px 4px 0px #becdcf;
+    transition: all .3s;
+}
+
+
+/*左侧菜单栏*/
+.menu-ul {
+    position: relative;
+    left: 0;
+    height: 100%;
+    /*overflow-y: auto;*/
+}
+.menu-ul > li.menu-first-li {
+    /*background-color: #ffffff;*/
+    /*height: 44px;*/
+    /*line-height: 44px;*/
+    position: relative;
+}
+.menu-ul > li > ul.menu-second{
+    position: relative;
+}
+.menu-ul i, .menu-ul cite {
+    font-style: normal;
+}
+.menu-ul a {
+    display: block;
+    padding: 6px 0 6px 20px;
+    font-size: 16px;
+    color: #000000;
+    cursor: pointer;
+    transition: all .4s;
+    background: #001529;
+    /*height: 44px;*/
+    /*line-height: 44px;*/
+}
+.menu-ul a:hover {
+    color: #2b86e0;
+    background-color: #1890ff;
+}
+.menu-ul .menu-active a {
+    color: #2b86e0;
+    /*background-color: #d7ebff;*/
+}
+.menu-second, .menu-third {
+    display: none;
+    position: relative;
+}
+.menu-second a {
+    padding-left: 18px;
+    color: #000000;
+}
+.menu-third a {
+    padding-left: 30px;
+    color: #999999;
+}
+.menu-ul a i {
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    color: #c1c1c1;
+}
+.menu-ul a cite {
+    display: inline-block;
+    width: 160px;
+    height: 20px;
+    line-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    vertical-align: middle;
+    color: #fff;
+    margin-left: 10px;
+}
+.menu-second a cite {
+    width: 172px;
+    font-size: 14px;
+}
+.menu-third a cite {
+    width: 160px;
+    font-size: 14px;
+}
+.menu-drag-bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6px;
+    height: 100%;
+    /*background-color: #2b3843;*/
+    background-color: transparent;
+    /*cursor: w-resize;*/
+}
+
+
+/*菜单栏展开*/
+.menu-second-li{
+    position: relative;
+}
+.menu-li-show > a{
+    background-color: #2b86e0;
+}
+.menu-second-li.menu-li-show ul{display: block;}
+.nav-more{
+    float: right;
+    margin-right: 20px;
+}
+
+/*菜单栏收缩*/
+.nav-mini.left-nav {
+    width: 80px;
+}
+.nav-mini.left-nav .logo-title{
+    display: none;
+}
+.nav-mini.left-nav .menu-ul .menu-first-li > a .nav-more{
+    display: none;
+}
+
+.nav-mini.left-nav .menu-first-li ul.menu-second{
+    position: absolute;
+    top:0px;
+    left: 79px;
+    width: 200px;
+    z-index: 98;
+    background: #001529;
+    border-left: 10px solid #fff;
+    padding: 5px 0;
+}
+.nav-mini.left-nav .menu-first-li:hover{
+    background:rgba(255,255,255,.1);
+}
+.nav-mini.left-nav .menu-first-li:hover > ul.menu-second{
+    display: block;
+}
+
+
+.nav-mini.left-nav .menu-second-li ul.menu-third{
+    position: absolute;
+    top:0px;
+    left:189px;
+    width: 200px;
+    z-index: 69;
+    background: #001529;
+    padding: 5px 0;
+    border-left: 10px solid #fff;
+    overflow: hidden;
+}
+.nav-mini.left-nav .menu-second-li:hover{
+    background:rgba(255,255,255,.1);
+}
+.nav-mini.left-nav .menu-second-li:hover > ul.menu-third{
+    display: block;
+}
+
+.nav-mini.left-nav .menu-first-li > a {
+    width: 80px;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 5px;
+    position: relative;
+    z-index: 99;
+}
+.nav-mini.left-nav .menu-second-li > a {
+    z-index: 98;
+    position: relative;
+}
+.nav-mini.left-nav .menu-first-li > a > cite{
+    width: 80px;
+    text-align: center;
+    margin-left: 0px;
+}
+.nav-mini.left-nav .menu-second a cite{
+    width: 140px;
+}
+
+.nav-mini.left-nav .menu-second a i:first-child{
+    display: none;
+}
+.nav-mini.left-nav .menu-third a i:last-child{
+    display: none;
+}
+
+

@@ -1,0 +1,55 @@
+/*左侧搜索框*/
+.menu-tool {
+    height: 48px;
+}
+.menu-drawer {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 16px;
+    color: #555555;
+    cursor: pointer;
+}
+.menu-drawer:hover {
+    color: #2c86e0;
+}
+.search-icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    /*margin-left: -210px;*/
+    margin-right: 2px;
+    line-height: 28px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+}
+.search-icon:hover {
+    color: #2c86e0;
+}
+.search-input {
+    width: 80%;
+    height: 32px;
+    line-height: 32px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-style: none;
+    border-radius: 2px;
+    margin: 8px auto;
+    padding: 0 5px 0 5px;
+    vertical-align: middle;
+    display: block;
+}
+.input-value{
+    width: 72%;
+    height: 100%;
+    background-color: transparent;
+    color: #fff;
+}
+.input-value:focus{
+    border: none;
+}
